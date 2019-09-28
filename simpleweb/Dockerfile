@@ -3,9 +3,13 @@ FROM node:alpine
 
 WORKDIR /usr/app
 
-# Install some dependencies
+# Copy just the needed file to prevent invalid cache
 COPY ./package.json ./
+
+# Install some dependencies
 RUN npm install
+
+# Now copy all files
 COPY ./ ./
 
 # Default command

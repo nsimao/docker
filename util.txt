@@ -1,0 +1,12 @@
+- build image
+
+docker build -t user/image:version .
+
+- execute an additional command in a container
+
+docker exec -it container_id command
+
+- specifying port
+
+docker run -p 8080:8080 image_id
+

@@ -74,4 +74,7 @@ typings/
 
 # FuseBox cache
 .fusebox/
-simpleweb/package-lock.json
+
+#package-lock.json
+package-lock.json
+

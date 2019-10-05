@@ -52,9 +52,15 @@ Then use it as:
 
 ## docker-compose
 
-- Start all: `docker compose up`.
+https://docs.docker.com/compose/reference/overview/
+
+- Start: `docker compose up`.
 
 `docker run myimage` == `docker-compose up`
+
+- specifying filename `-f`: 
+
+`docker-compose -f docker-compose-dev.yml up`.
 
 - Build with `docker-compose`
 `docker-compose up --build`

@@ -16,7 +16,7 @@
 or
 `docker run -it busybox sh`
 
-running in background `-d`
+- running in background `-d`
 `docker run redis - d`
 
 - specifying port `-p`
@@ -32,11 +32,11 @@ running in background `-d`
 - Build with `docker-compose`
 `docker-compose up --build`
 
-run at background 
+- run at background 
 `docker-compose up -d`
 
-stop 
+- stop 
 `docker-compose down`
 
-status of containers specified at docker-compose
+- status of containers specified at docker-compose
 `docker-compose ps`

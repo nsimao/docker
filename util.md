@@ -19,7 +19,7 @@ or
 
 `docker run -p 3000:3000 -v $(pwd):/app myimage`
 
-`docker run -p 3000:3000 -v /app/node_modules -v C:\ME\personal\GitHub\docker\frontend:/app 0231b207e779                                       `
+`docker run -p 3000:3000 -v /app/node_modules -v C:\ME\personal\GitHub\docker\frontend:/app nsimao/frontend`                                      ``
 
 when there is no use of `:`, ex: `-v /app/node_modules`, docker preserves the directory.
 - stop
@@ -39,6 +39,13 @@ when there is no use of `:`, ex: `-v /app/node_modules`, docker preserves the di
 - build image with custom name `-f`
 
 `docker build -f Dockerfile.dev -t user/image:version .`
+
+- volumes to databases
+For a DVC (Data Volume Container), try docker volume create:
+
+`docker volume create mongodbdata`
+Then use it as:
+`docker run -p 27017:27017 -v mongodbdata:/data/db`
 
 ## docker-compose
 

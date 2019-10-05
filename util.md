@@ -1,3 +1,5 @@
+## docker
+
 - build image
 
 `docker build -t user/image:version .`
@@ -21,7 +23,7 @@ running in background `-d`
 
 `docker run -p 8080:8080 image_id`
 
-**************** Docker Compose *******************
+## docker-compose
 
 - Start all: `docker compose up`.
 

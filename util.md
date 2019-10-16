@@ -6,7 +6,7 @@
 or
 `docker run -it busybox sh`
 
-- running in background `-d`
+- running in background / `detached` mode `-d`
 `docker run redis - d`
 
 - specifying port `-p`

@@ -21,7 +21,8 @@ or
 
 `docker run -p 3000:3000 -v /app/node_modules -v C:\ME\personal\GitHub\docker\frontend:/app nsimao/frontend`                                      ``
 
-when there is no use of `:`, ex: `-v /app/node_modules`, docker preserves the directory.
+when there is no use of `:`, ex: `-v /app/node_modules`, docker preserves the directory from the container.
+
 - stop
 
 `docker stop container-id`

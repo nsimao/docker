@@ -7,7 +7,7 @@ services:
   nginx:
     restart: always
     build:
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
       context: ./nginx
     ports:
       - "3050:80"
@@ -15,7 +15,7 @@ services:
     depends_on:
       - postgres
     build:
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
       context: ./server
     volumes:
       - /app/node_modules # use the directory from the container
@@ -30,14 +30,14 @@ services:
       - PGPORT=5432
   client:
     build:
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
       context: ./client
     volumes:
       - /app/node_modules # use the directory from the container
       - ./client:/app  # mapping from local
   worker:
     build:
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
       context: ./worker
     volumes:
       - /app/node_modules # use the directory from the container

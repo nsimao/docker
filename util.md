@@ -1,5 +1,7 @@
 ## docker
 
+### docker
+
 - execute an additional command in a container
 
 `docker exec -it container_id command`
@@ -51,7 +53,7 @@ Then use it as:
 
 `docker run -p 27017:27017 -v mongodbdata:/data/db`
 
-## docker-compose
+### docker-compose
 
 https://docs.docker.com/compose/reference/overview/
 
@@ -85,3 +87,6 @@ https://docs.docker.com/compose/reference/overview/
 
 - print the status of all running pods
 `kubectl get <object_type>`, example: `kubectl get pods`
+
+- print the status of all running services
+`kubectl get services`

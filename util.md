@@ -74,3 +74,14 @@ https://docs.docker.com/compose/reference/overview/
 
 - status of containers specified at docker-compose
 `docker-compose ps`
+
+
+## k8s
+
+### kubectl
+
+- feed a config file to kubectl
+`kubectl apply -f <filename>`
+
+- print the status of all running pods
+`kubectl get <object_type>`, example: `kubectl get pods`

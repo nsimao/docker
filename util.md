@@ -90,3 +90,6 @@ https://docs.docker.com/compose/reference/overview/
 
 - print the status of all running services
 `kubectl get services`
+
+- get detailed info about an object
+`kubectl describe <object_type> <object_name>`, example: `kubectl describe pod client-pod`

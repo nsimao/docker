@@ -83,7 +83,7 @@ https://docs.docker.com/compose/reference/overview/
 ### kubectl
 
 - feed a config file to kubectl
-`kubectl apply -f <filename>`
+`kubectl apply -f <filename>`, example: `kubectl apply -f client-pod.yaml`
 
 - print the status of all running pods
 `kubectl get <object_type>`, example: `kubectl get pods`
@@ -93,3 +93,7 @@ https://docs.docker.com/compose/reference/overview/
 
 - get detailed info about an object
 `kubectl describe <object_type> <object_name>`, example: `kubectl describe pod client-pod`
+
+- delete an object
+
+`kubectl delete -f <filename>`, example: `kubectl delete -f client-pod.yaml`

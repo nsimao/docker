@@ -97,3 +97,9 @@ https://docs.docker.com/compose/reference/overview/
 - delete an object
 
 `kubectl delete -f <filename>`, example: `kubectl delete -f client-pod.yaml`
+
+- creating a secret
+
+`kubectl create secret <type_of_secret> <secret_name> --from-literal key=value`, example: `kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf`
+
+`--from-literal`: we are going to add the secret information into this command, as opposed to from . file.

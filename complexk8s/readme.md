@@ -4,7 +4,7 @@
 
 ## k8s components
 
-![k8s components](k8s components.png)
+![k8s components](k8s-components.png)
 
 ## Fix for Postgres CrashLoopBackOff Error on Windows Pro
 

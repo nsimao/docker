@@ -6,6 +6,12 @@
 
 ![k8s components](k8s-components.png)
 
+# Ingress Usage
+
+We're using for this project the ingress-nginx from the kubernets github repository. `the green one`.
+
+![ingress.png](ingress.png)
+
 ### Fix for Postgres CrashLoopBackOff Error on Windows Pro
 
 This note is only for students that are on Windows Pro and are using Docker Desktop's built-in Kubernetes. If you are using Docker for Mac's Kubernetes or Minikube this issue will not apply to you and can be skipped.

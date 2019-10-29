@@ -1,4 +1,13 @@
-Fix for Postgres CrashLoopBackOff Error on Windows Pro
+# Solution Diagram
+
+![diagram](diagram.png)
+
+## k8s components
+
+![k8s components](k8s components.png)
+
+## Fix for Postgres CrashLoopBackOff Error on Windows Pro
+
 This note is only for students that are on Windows Pro and are using Docker Desktop's built-in Kubernetes. If you are using Docker for Mac's Kubernetes or Minikube this issue will not apply to you and can be skipped.
 
 In the next lecture, we will be running a kubectl apply -f k8s after creating our PersistentVolumeClaim. You will likely notice that your Postgres pod will show a status of CrashLoopBack.

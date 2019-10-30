@@ -17,7 +17,9 @@ or
 
 - specifying volumes `-v`
 
-`pwd`: means present working directory, doesn't work on Windows. 
+`pwd`: means present working directory.
+
+`docker volume create --name pgdata-volume`
 
 `docker run -p 3000:3000 -v $(pwd):/app myimage`
 
